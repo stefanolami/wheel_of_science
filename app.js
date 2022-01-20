@@ -3,6 +3,7 @@ const phrase = document.querySelector('#phrase');
 const start = document.querySelector('.btn__reset');
 const overlay = document.querySelector('#overlay');
 const main = document.querySelector('.main-container');
+const game = document.querySelector('.game-container');
 
 let missed = 0;
 
@@ -126,6 +127,16 @@ function resetKeyboard() {
     }
 }
 
+function showGame() {
+    overlay.style.display = 'none';
+    game.style.display = 'flex';
+}
+
+function showOverlay() {
+    game.style.display = 'none';
+    overlay.style.display = 'flex';
+}
+
 
 addPhraseToDisplay(getRandomPhraseAsArray(phrases));
 const letters = document.querySelectorAll('.letter');
@@ -133,7 +144,8 @@ const letters = document.querySelectorAll('.letter');
 
 start.addEventListener('click', (e) => {
     const overlay = document.querySelector('#overlay');
-    overlay.style.display = 'none';
+    showGame();
+
 })
 
 overlay.addEventListener('click', (e) => {
