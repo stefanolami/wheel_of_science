@@ -63,3 +63,25 @@ body {
   width: 100%;
   padding: 10px;
 }
+
+h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+.btn__reset {
+  padding: 15px;
+  margin: 50px auto;
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.start a {
+  color: black;
+}
