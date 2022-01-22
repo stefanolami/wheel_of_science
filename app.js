@@ -80,13 +80,13 @@ function checkWin() {
     const title = document.querySelector('.title');
     if (letters.length === shownLetters.length) {
         overlay.className = 'win';
-        overlay.style.display = 'flex';
         title.textContent = "You're a Winner";
+        showOverlay();
         createResetBtn();
     } else if (missed >= 5) {
         overlay.className = 'lose';
-        overlay.style.display = 'flex';
         title.textContent = "You're a Loser";
+        showOverlay();
         createResetBtn();
     }
 }
@@ -98,7 +98,7 @@ function createResetBtn() {
         btn.remove();
     }
     
-    const newBtn = document.createElement('button');
+    const newBtn = document.createElement('a');
     newBtn.textContent = 'RESET GAME';
     newBtn.className = 'resetBtn'
     overlay.appendChild(newBtn);
@@ -150,7 +150,7 @@ start.addEventListener('click', (e) => {
 
 overlay.addEventListener('click', (e) => {
     if (e.target.className === 'resetBtn') {
-        overlay.style.display = 'none';
+        showGame();
         missed = 0;
         resetHearts();
         resetPhrase();
