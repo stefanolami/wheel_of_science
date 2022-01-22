@@ -20,6 +20,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -117,7 +118,7 @@ li, ol, ul {
   font-size: 15px;
   height: 28px;
   width: 28px;
-  padding: 12px 1px 8px 1px;
+  padding: 4px 1px 6px 1px;
   margin: 3px;
   margin-right: 2px;
   color: transparent;
@@ -126,22 +127,22 @@ li, ol, ul {
   transition: background-color 0.7s ease;
 }
 
-button {
-  margin: 2px;
-  border: 1px solid transparent;
-  padding: .5rem 1rem;
-  color: var(--color-keys);
-  font-size: 13px;
-  background-color: var(--color-keys-light);
-  border-radius: 5px;
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
+ul {
+  margin: 0;
 }
 
 .wordDiv {
-  margin-right: 18px;
-  height: 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  min-height: 35px;
+}
+
+.show {
+  color: #000;
+  background-color: #76CE82;
 }
 
 
@@ -158,6 +159,20 @@ button {
 .chosen {
   background: var(--color-neutral);
   border-radius: 5px;
-  font-size: var(--font-size-medium);
   color: #FFFFFF;
+}
+
+button {
+  width: 26px;
+  margin: 2px;
+  border: 1px solid transparent;
+  padding: .5rem 0;
+  color: var(--color-keys);
+  font-size: 12px;
+  background-color: var(--color-keys-light);
+  border-radius: 5px;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  text-align: center;
 }
