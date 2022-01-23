@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
   text-align: center;
   margin: auto;
   position: absolute;
