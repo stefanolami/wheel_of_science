@@ -23,11 +23,12 @@ const phrases = [
     'i have seen the further it is by standing on the shoulders of giants',
     'real science can be far stranger than science fiction and much more satisfying',
     'science is simply the word to describe a method of organizing our curiosity',
-    'energy is liberated matter and matter is energy waiting to happen'
+    'energy is liberated matter and matter is energy waiting to happen',
+    'florina is the most beautiful tzutzona of the world'
 ];
 
 function getRandomPhraseAsArray(arr) {
-    const i = Math.floor(Math.random() * 16);
+    const i = Math.floor(Math.random() * 17);
     const newPhraseArray = arr[i].split(' ');
     
     console.log(newPhraseArray);
