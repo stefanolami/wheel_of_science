@@ -121,6 +121,10 @@ a {
 /* game */
 
 
+.header {
+  color: var(--color-start);
+}
+
 li, ol, ul {
   padding: 0;
   display: inline-block;
@@ -196,4 +200,103 @@ button {
   -o-transition: var(--transition);
   transition: var(--transition);
   text-align: center;
+  cursor: pointer;
+}
+
+
+
+/* media queries */
+
+
+@media screen and (min-width: 480px) {
+
+  #phrase {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  button {
+    width: 35px;
+    font-size: 15px;
+  }
+
+  .letter {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #phrase {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  h2 {
+    font-size: 50px;
+    margin: 40px 0 20px 0;
+  }
+
+  button {
+    width: 38px;
+    font-size: 17px;
+  }
+
+  .letter {
+    width: 34px;
+    height: 34px;
+    font-size: 19px;
+  }
+
+  .resetBtn {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  #phrase {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 70px;
+  }
+
+  h2 {
+    font-size: 80px;
+    margin: 70px 0 80px 0;
+  }
+
+  button {
+    width: 50px;
+    font-size: 25px;
+    margin: 4px;
+  }
+
+  .letter {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin-right: 4px;
+  }
+
+  .wordDiv {
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
+
+  .resetBtn {
+    font-size: 26px;
+    padding: 20px;
+  }
+
+  img {
+    width: 35px;
+    height: 40px;
+  }
 }

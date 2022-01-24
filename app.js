@@ -1,6 +1,6 @@
 const qwerty = document.querySelector('#qwerty');
 const phrase = document.querySelector('#phrase');
-const start = document.querySelector('.btn__reset');
+const start = document.querySelector('.resetBtn');
 const overlay = document.querySelector('#overlay');
 const main = document.querySelector('.main-container');
 const game = document.querySelector('.game-container');
@@ -143,11 +143,11 @@ addPhraseToDisplay(getRandomPhraseAsArray(phrases));
 const letters = document.querySelectorAll('.letter');
 
 
-start.addEventListener('click', (e) => {
+/* start.addEventListener('click', (e) => {
     const overlay = document.querySelector('#overlay');
     showGame();
 
-})
+}) */
 
 overlay.addEventListener('click', (e) => {
     if (e.target.className === 'resetBtn') {
