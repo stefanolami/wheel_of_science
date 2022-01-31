@@ -19,23 +19,22 @@ const phrases = [
     'something incredible is waiting to be known',
     'falsity in intellectual action is intellectual immorality',
     'science without religion is lame and religion without science is blind',
-    'the good thing about science is that it’s true whether or not you believe in it',
+    'the good thing about science is that it is true whether or not you believe in it',
     'i have seen the further it is by standing on the shoulders of giants',
     'real science can be far stranger than science fiction and much more satisfying',
     'science is simply the word to describe a method of organizing our curiosity',
-    'energy is liberated matter and matter is energy waiting to happen',
-    'florina is the most beautiful tzutzona of the world'
+    'energy is liberated matter and matter is energy waiting to happen'
 ];
 
 function getRandomPhraseAsArray(arr) {
-    const i = Math.floor(Math.random() * 17);
+    const i = Math.floor(Math.random() * 16);
     const newPhraseArray = arr[i].split(' ');
     
     console.log(newPhraseArray);
     return newPhraseArray;
- }
+}
 
- function addPhraseToDisplay(arr) {
+function addPhraseToDisplay(arr) {
     for (let i = 0; i < arr.length; i++) {
         const div = document.createElement('div')
         div.className = 'wordDiv';
@@ -82,7 +81,7 @@ function checkWin() {
     if (letters.length === shownLetters.length) {
         overlay.className = 'win';
         title.textContent = "You're a Winner";
-        showOverlay();
+        setTimeout(() => {showOverlay()}, 3000);
         createResetBtn();
     } else if (missed >= 5) {
         overlay.className = 'lose';
@@ -139,8 +138,8 @@ function showOverlay() {
 }
 
 
-addPhraseToDisplay(getRandomPhraseAsArray(phrases));
-const letters = document.querySelectorAll('.letter');
+/* addPhraseToDisplay(getRandomPhraseAsArray(phrases));
+const letters = document.querySelectorAll('.letter'); */
 
 
 /* start.addEventListener('click', (e) => {
